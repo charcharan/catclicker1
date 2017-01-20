@@ -1,7 +1,9 @@
 var i = 1;
+
 $("#target").click( function(e) {
   console.log(i);
   i++;
-  document.getElementById('target').innerHTML = target;
+  var txt = $("<p></p>").text("count=" + i);
+  $("body").append(txt);
 
 });
