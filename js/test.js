@@ -1,9 +1,6 @@
 var i = 1;
-
+var txt1 = $("<p></p>");
 $("#target").click( function(e) {
   console.log(i);
-  i++;
-  var txt = $("<p></p>").text("count=" + i);
-  $("body").append(txt);
-
+  $("body").append(txt1.text("count=" + i++));
 });
